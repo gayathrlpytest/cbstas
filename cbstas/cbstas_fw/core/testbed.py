@@ -99,24 +99,3 @@ class Testbed(Client):
             client_obj = Client(**cfg._cfg_all_dut_info[dut])
             cfg._cfg_all_duts_obj[dut] = client_obj
 
-
-"""
-tb = Testbed(path_list=[inp])
-import pdb; pdb.set_trace()
-print tb.get_all_duts_info()
-#print tb.get_dut_info('master')
-print cfg._cfg_all_dut_info.keys()
-print cfg._cfg_all_csp_info
-print '\n\n'
-tb.get_all_dut_handlers()
-print cfg._cfg_all_duts_obj
-print cfg._cfg_all_duts_obj['master']
-ssh_obj = cfg._cfg_all_duts_obj['ontap1']
-import pdb; pdb.set_trace()
-self.shell_obj.invoke_shell
-print ssh_obj.run_shell('hostname')['raw_output']
-print ssh_obj.run_shell('date')['raw_output']
-print ssh_obj.run_shell('?')['raw_output']
-print ssh_obj.run_shell('set -privilege admin')
-print ssh_obj.run_shell('?')['raw_output']
-"""
