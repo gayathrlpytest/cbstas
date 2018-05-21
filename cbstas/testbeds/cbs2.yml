@@ -1,0 +1,64 @@
+---
+
+- duts:
+    - name: master2
+      type: k8s
+      os: linux
+      ip: 10.61.131.97
+      username: root
+      password: netapp1234
+      image: dum.img
+      
+    - name: worker21
+      type: k8s
+      os: linux
+      ip: 10.61.131.95
+      username: root
+      password: netapp1234  
+      image: dum.img
+      
+    - name: worker22
+      type: k8s
+      os: linux
+      ip: 10.61.131.209
+      username: root
+      password: netapp1234
+      image: dum.img
+
+    - name: ontap21
+      type: ontap
+      ip: 10.193.74.34
+      interclust_ip: 10.193.74.35
+      data_ip: 10.193.74.6
+      username: admin
+      password: netapp1!
+      vservers: [n1_vs0, n1_vs1]
+      aggregates: [n1_aggr0, n1_aggr1]
+      image: dum.img
+
+    - name: ontap22
+      type: ontap
+      ip: 10.193.74.39
+      interclust_ip: 10.193.74.4
+      data_ip: 10.193.74.61
+      username: admin
+      password: netapp1!
+      vservers: [n2_vs0]
+      aggregates: [n2_aggr0]
+      masterdataset_volume: ms_vol
+      image: dum.img
+
+    - name: client21
+      type: client
+      os: linux
+      ip: 10.193.58.44
+      username: root
+      password: netapp1234
+      image: dum.img
+
+- csp:
+    - name: s3
+      bucket: s3-cbs
+      access_key: xxxx
+      secret_key: yyyy
+
