@@ -4,7 +4,6 @@
 #
 # This defines all the global objects and object repositories
 
-
 _cfg_all_dut_info = {}
 _cfg_all_csp_info = {}
 _cfg_all_duts_obj = {}
