@@ -6,7 +6,7 @@
 #
 # This file is part of cbsTAS project
 #
-# Author: Gayathri Lokesh <gayathrl@netapp.com> + partial pitsa code
+# Author: Gayathri Lokesh <gayathrl@netapp.com> [Pulled in from pitsa]
 #
 
 # python imports
